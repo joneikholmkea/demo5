@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add user</title>
+</head>
+<body>
+Add user...
+<p th:text="'fornavn: ' + *{user.fname}" />
+<p th:text="'efternavn: ' + *{user.lname}" />
+
+
+<h1>Product list</h1>
+
+<table>
+    <tr>
+        <th>NAME</th>
+        <th>PRICE</th>
+    </tr>
+    <tr th:each="user2 : *{users}">
+        <td th:text="*{user2.fname}">Onions</td>
+        <td th:text="*{user2.lname}">2.41</td>
+    </tr>
+</table>
+<a href="/">Go back</a>
+</body>
+</html>
