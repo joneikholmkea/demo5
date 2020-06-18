@@ -1,1 +1,2 @@
-first line changed in new branch
+first line changed OK in new branch
+edit in main branch
